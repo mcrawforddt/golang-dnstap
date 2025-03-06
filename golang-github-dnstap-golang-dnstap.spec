@@ -12,7 +12,7 @@ Implements an encoding format for DNS server events.}
 %global golicences      LICENSE
 %global godocs          README
 
-Name:           %{goname}
+Name:           golang-dnstap
 Release:        %autorelease
 Summary:        DNS server event encoding format
 
