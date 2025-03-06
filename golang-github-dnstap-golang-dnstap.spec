@@ -20,6 +20,8 @@ License:        Apache-2.0
 URL:            %{gourl}
 Source0:        %{gosource}
 
+BuildRequires:  rpmautospec
+
 %description
 %{common_description}
 
