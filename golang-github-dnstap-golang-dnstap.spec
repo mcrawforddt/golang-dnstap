@@ -13,7 +13,7 @@ Implements an encoding format for DNS server events.}
 %global godocs          README
 
 Name:           golang-dnstap
-Release:        %autorelease
+Release:        1%{?dist}
 Summary:        DNS server event encoding format
 
 License:        Apache-2.0
