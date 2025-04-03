@@ -20,7 +20,8 @@ License:        Apache-2.0
 URL:            %{gourl}
 Source0:        %{gosource}
 
-BuildRequires:  golang-github-miekg-dns-devel rpmautospec
+BuildRequires:  golang-github-miekg-dns-devel
+#BuildRequires:  golang-github-miekg-dns-devel rpmautospec
 
 %description
 %{common_description}
@@ -30,8 +31,8 @@ BuildRequires:  golang-github-miekg-dns-devel rpmautospec
 %prep
 %goprep
 
-%generate_buildrequires
-%go_generate_buildrequires
+#%generate_buildrequires
+#%go_generate_buildrequires
 
 %install
 %gopkginstall
