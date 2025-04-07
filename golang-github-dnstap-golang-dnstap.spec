@@ -20,7 +20,7 @@ License:        Apache-2.0
 URL:            %{gourl}
 Source0:        %{gosource}
 
-BuildRequires:  golang-github-farsightsec-golang-framestream-devel golang-github-miekg-dns-devel
+BuildRequires:  golang-github-farsightsec-golang-framestream golang-github-miekg-dns-devel
 #BuildRequires:  golang-github-miekg-dns-devel rpmautospec
 
 %description
