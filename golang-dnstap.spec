@@ -20,13 +20,17 @@ License:        Apache-2.0
 URL:            %{gourl}
 Source0:        %{gosource}
 
-BuildRequires:  golang-github-farsightsec-golang-framestream golang-github-miekg-dns-devel
+BuildRequires:  golang-github-farsightsec-go-framestream golang-github-miekg-dns-devel
 #BuildRequires:  golang-github-miekg-dns-devel rpmautospec
 
 %description
 %{common_description}
 
-%gopkg
+%package -n %{goname}-devel
+Summary:	%{summary}
+BuildArch:  noarch
+%description -n %{goname}-devel
+%{common_description}
 
 %prep
 %goprep
@@ -42,7 +46,7 @@ BuildRequires:  golang-github-farsightsec-golang-framestream golang-github-miekg
 %gocheck
 %endif
 
-%gopkgfiles
+%files -n %{goname}-devel -f file-list
 
 %changelog
 %autochangelog
