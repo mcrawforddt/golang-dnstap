@@ -49,4 +49,3 @@ BuildArch:  noarch
 %files -n %{goname}-devel -f file-list
 
 %changelog
-%autochangelog
