@@ -21,7 +21,6 @@ URL:            %{gourl}
 Source0:        %{gosource}
 
 BuildRequires:  golang-github-farsightsec-framestream-devel golang-github-miekg-dns-devel
-#BuildRequires:  golang-github-miekg-dns-devel rpmautospec
 
 %description
 %{common_description}
