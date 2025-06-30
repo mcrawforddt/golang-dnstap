@@ -48,14 +48,7 @@ Source0:        %{gosource}
 %autopatch -p1
 
 %install
-find .
-for file in $(find . -iname "*.go" \! -iname "*_test.go" \! -iname "main.go" ) ; do
-    echo "%%dir %%{gopath}/src/%%{goipath}/$(dirname $file)" >> devel.file-list
-    install -d -p %{buildroot}/%{gopath}/src/%{goipath}/$(dirname $file)
-    cp -pav $file %{buildroot}/%{gopath}/src/%{goipath}/$file
-    echo "%%{gopath}/src/%%{goipath}/$file" >> devel.file-list
-done
-sort -u -o devel.file-list devel.file-list
+%gopkginstall
 
 %if %{with check}
 %check
