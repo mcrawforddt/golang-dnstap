@@ -23,7 +23,7 @@ Version:        0.4.0
 Release:        1%{?dist}
 Summary:        DNS server event encoding format
 %gometa
-Name:           golang-dnstap
+Name:           %{goname}
 License:        Apache-2.0
 URL:            %{gourl}
 Source0:        %{gosource}
