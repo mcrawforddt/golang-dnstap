@@ -34,6 +34,7 @@ Source0:        %{gosource}
 %go_generate_buildrequires
 
 %gopkg
+Provides: golang(github.com/dnstap/golang-dnstap)
 
 %prep
 %setup -q
